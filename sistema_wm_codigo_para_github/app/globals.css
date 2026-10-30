@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #172033;
+  --muted: #6b7280;
+  --line: #e7eaf0;
+  --primary: #4f46e5;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #d2d6df; border-radius: 99px; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; }
+.btn { border-radius: 10px; padding: 10px 14px; font-weight: 700; border: 1px solid transparent; }
+.btn-primary { background:  #d71920; color: white; }
+.btn-primary:hover { filter: brightness(.95); }
+.btn-secondary { background: white; border-color: var(--line); color: var(--text); }
+.input { width: 100%; border: 1px solid #dfe3ea; border-radius: 10px; padding: 10px 12px; outline: none; background: white; }
+.input:focus { border-color: #8b86f5; box-shadow: 0 0 0 3px rgba(79,70,229,.10); }
+.badge { display:inline-flex; align-items:center; padding:5px 9px; border-radius:999px; font-size:12px; font-weight:700; }
